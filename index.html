@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Velour — Fragrance House</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">VEL<em>o</em>UR</div>
+  <div class="nav-links">
+    <a href="#shop">Shop</a>
+    <a href="#story">Our Story</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="nav-icons">
+    <button class="icon-btn" aria-label="Search"><i data-lucide="search"></i></button>
+    <button class="icon-btn" aria-label="Wishlist"><i data-lucide="heart"></i></button>
+    <button class="icon-btn" id="cart-toggle" aria-label="Cart">
+      <i data-lucide="shopping-bag"></i>
+      <span class="cart-count" id="cart-count" style="display:none">0</span>
+    </button>
+    <button class="burger" id="burger-toggle" aria-label="Menu"><i data-lucide="menu"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-text">
+    <div class="eyebrow"><span class="dot"></span> NEW SEASON EDIT</div>
+    <h1>Fragrance that feels <em>like you.</em></h1>
+    <p>Four scents, hand-poured in small batches. Vegan, cruelty-free, and made to layer, gift, or wear every single day.</p>
+    <div class="btn-row">
+      <a href="#shop" class="btn">Shop the Edit</a>
+      <a href="#story" class="btn-outline">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="blob"></div>
+    <img class="float-img" src="https://images.unsplash.com/photo-1618436917143-548beebc58e5?fm=jpg&q=80&w=900&auto=format&fit=crop" alt="Velour perfume bottle" />
+    <div class="badge-float">
+      <div class="stars">★★★★★</div>
+      4.9 · 2,300+ reviews
+    </div>
+  </div>
+</header>
+
+<!-- FEATURES -->
+<div class="strip reveal">
+  <div class="feature">
+    <div class="ic"><i data-lucide="truck"></i></div>
+    <div><h4>Free delivery</h4><p>On every order, no minimum.</p></div>
+  </div>
+  <div class="feature">
+    <div class="ic"><i data-lucide="leaf"></i></div>
+    <div><h4>Vegan &amp; cruelty-free</h4><p>Nothing tested on animals.</p></div>
+  </div>
+  <div class="feature">
+    <div class="ic"><i data-lucide="rotate-ccw"></i></div>
+    <div><h4>7-day returns</h4><p>Not the one? Send it back.</p></div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="section" id="shop">
+  <div class="section-head reveal">
+    <span class="kicker">THE COLLECTION</span>
+    <h2>Four scents, one house.</h2>
+    <p>Each bottle is numbered to its pour batch and never mass-produced.</p>
+  </div>
+  <div class="grid" id="product-grid"></div>
+</section>
+
+<!-- STORY -->
+<section class="story reveal" id="story">
+  <img src="https://images.unsplash.com/photo-1709662369957-0cbf9f8452fc?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Perfumer at work" />
+  <div class="story-copy">
+    <span class="kicker">THE HOUSE</span>
+    <h2 class="serif">One idea, refined for three years.</h2>
+    <p>Velour began as a single note sketched after a rainstorm, rebuilt more than a dozen times before it earned a label. Every batch is small, numbered, and mixed by hand.</p>
+    <p>No synthetic shortcuts, no mass production — just four fragrances we're proud to put our name on.</p>
+    <a href="#shop" class="btn-outline">Explore the Collection</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal">
+  <h2 class="serif">Your signature scent is waiting.</h2>
+  <p>Free delivery on every order. Try it for 7 days, risk-free.</p>
+  <a href="#shop" class="btn">Shop Now</a>
+</section>
+
+<footer>
+  <div class="logo" style="font-size:20px;margin-bottom:10px;">VEL<em style="color:#C87A56">o</em>UR</div>
+  <p>© 2026 Velour Fragrance House. Hand-poured, always.</p>
+  <p class="credits">Photos via Unsplash: Fulvio Ciccolo, Katya Azimova, Laura Chouette. Icons via Lucide.</p>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3 class="serif">Your Bag</h3>
+    <button class="icon-btn" id="drawer-close"><i data-lucide="x"></i></button>
+  </div>
+  <div class="drawer-items" id="drawer-items">
+    <div class="drawer-empty" id="drawer-empty">Your bag is empty.</div>
+  </div>
+  <div class="drawer-footer" id="drawer-footer" style="display:none">
+    <div class="drawer-total"><span>Total</span><span id="drawer-total">$0</span></div>
+    <button class="btn" style="width:100%;justify-content:center;">Checkout</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><i data-lucide="shopping-bag"></i> <span id="toast-msg"></span></div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
